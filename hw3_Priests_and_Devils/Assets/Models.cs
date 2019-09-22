@@ -40,7 +40,7 @@ namespace mygame
 
         public LandModel(string land_mark)
         {
-            positions = new Vector3[] {new Vector3(14,0,0), new Vector3(12,0,0), new Vector3(10,0,0),
+            positions = new Vector3[] {new Vector3(10,0,0), new Vector3(12,0,0), new Vector3(14,0,0),
                 new Vector3(16,0,0), new Vector3(18,0,0), new Vector3(20,0,0)};
             if (land_mark == "start")
             {
@@ -131,7 +131,7 @@ namespace mygame
             move = boat.AddComponent(typeof(Move)) as Move;
             click = boat.AddComponent(typeof(Click)) as Click;
             click.SetBoat(this);
-            start_empty_pos = new Vector3[] { new Vector3(8,-2,0), new Vector3(6,-2,0) };
+            start_empty_pos = new Vector3[] { new Vector3(6,-2,0), new Vector3(8,-2,0) };
             end_empty_pos = new Vector3[] { new Vector3(-8,-2,0), new Vector3(-6,-2,0) };
         }
 
@@ -372,13 +372,13 @@ namespace mygame
     {
         public void Play()                                  //播放gameover状态的动画
         {
-            Animator anim = this.GetComponent<Animator>();
-            anim.SetBool("isgameover", true);
+            // Animator anim = this.GetComponent<Animator>();
+            // anim.SetBool("isgameover", true);
         }
         public void NotPlay()                              //播放Idle状态的动画
         {
-            Animator anim = this.GetComponent<Animator>();
-            anim.SetBool("isgameover", false);
+            // Animator anim = this.GetComponent<Animator>();
+            // anim.SetBool("isgameover", false);
         }
     }
 }

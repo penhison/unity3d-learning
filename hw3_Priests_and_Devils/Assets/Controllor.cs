@@ -57,8 +57,8 @@ public class Controllor : MonoBehaviour, ISceneController, IUserAction
         {
             for (int i = 0; i < 3; i++)
             {
-                roles[i].PlayGameOver();
-                roles[i + 3].PlayGameOver();
+                // roles[i].PlayGameOver();
+                // roles[i + 3].PlayGameOver();
             }
         }
     }
@@ -93,8 +93,8 @@ public class Controllor : MonoBehaviour, ISceneController, IUserAction
         {
             for (int i = 0; i < 3; i++)
             {
-                roles[i].PlayGameOver();
-                roles[i + 3].PlayGameOver();
+                // roles[i].PlayGameOver();
+                // roles[i + 3].PlayGameOver();
             }
         }
     }
@@ -112,8 +112,8 @@ public class Controllor : MonoBehaviour, ISceneController, IUserAction
         {
             for (int i = 0; i < 3; i++)
             {
-                roles[i + 3].PlayIdle();
-                roles[i].PlayIdle();
+                // roles[i + 3].PlayIdle();
+                // roles[i].PlayIdle();
             }
         }
     }
